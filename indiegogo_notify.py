@@ -50,7 +50,7 @@ def authenticate(email, password):
 		slack(str(result.status_code) + " encountered attempting to authenticate")
 	return json.loads(result.text)["access_token"]
 
-def lambda_handler(event, context):\
+def lambda_handler(event, context):
 	""" amazon lambda entry point """
 	try:
 		token = authenticate(INDIEGOGO_USER, INDIEGOGO_PASSWORD)
