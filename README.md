@@ -1,5 +1,4 @@
-
-Simple script to query indiegogo to check the stock for a campaign and notify via slack webhook.
+simple script to query indiegogo to check perk status and notify via slack webhook.
 
 This script is designed to run as a AWS lambda function.
 
